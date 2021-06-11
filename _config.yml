@@ -15,6 +15,10 @@ github_username:  jkonrath
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page:num/"ß  
 show_excerpts: true
 
 # Exclude from processing.
