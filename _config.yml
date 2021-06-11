@@ -6,10 +6,10 @@ description: >
 
 
 title: Jon Konrath
-email: your-email@example.com
+#email: your-email@example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-#twitter_username: jekyllrb
-#github_username:  jekyll
+twitter_username: jonkonrath
+github_username:  jkonrath
 
 # Build settings
 theme: minima
