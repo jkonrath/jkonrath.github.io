@@ -18,7 +18,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 10
-paginate_path: "/page:num/"ß  
+paginate_path: "/page:num/"
 show_excerpts: true
 
 # Exclude from processing.
