@@ -10,6 +10,7 @@ title: Jon Konrath
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: jonkonrath
 github_username:  jkonrath
+linkedin_username: jkonrath
 
 # Build settings
 theme: minima
