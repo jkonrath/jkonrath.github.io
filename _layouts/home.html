@@ -17,7 +17,7 @@ pagination:
       <li>
           <h2>
             <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }} 
+              {{ post.title | escape }}
             </a>
           </h2>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -26,7 +26,7 @@ pagination:
 		{{ post.content }}
 
  <!--       {%- if site.show_excerpts -%}
-          {{ post.excerpt }} 
+          {{ post.excerpt }}
         {%- endif -%} -->
 	 <hr/>
       </li>
@@ -35,18 +35,25 @@ pagination:
 <div class="pagination">
    {% if paginator.previous_page %}
      <a href="{{ paginator.previous_page_path }}" class="previous">
-       Previous
+       &lt;&lt;
      </a>
-   {% else %}
-     <span class="previous">Previous</span>
+  {% else %}
+
    {% endif %}
    <span class="page_number ">
-     Page: {{ paginator.page }} of {{ paginator.total_pages }}
+     {% for page in (1..paginator.total_pages) %}
+       {% if page == paginator.page %}
+         <em>{{ page }}</em>
+       {% elsif page == 1 %}
+         <a href="{{ '/' | relative_url }}">{{ page }}</a>
+       {% else %}
+         <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+       {% endif %}
+     {% endfor %}
    </span>
    {% if paginator.next_page %}
-     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+     <a href="{{ paginator.next_page_path }}" class="next">&gt;&gt;</a>
    {% else %}
-     <span class="next ">Next</span>
    {% endif %}
  </div>
 
