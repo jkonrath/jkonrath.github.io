@@ -37,5 +37,3 @@ I normally set an environment windows by right-clicking **My Computer** and goin
 That adds the time to the front of the default prompt. The reason I did this is because Jekyll builds take forever, and I wanted an easy way to tell if I started the build two minutes or seventeen minutes ago, because time loses all meaning on the last day of a release.
 
 (Thanks: <a href="http://www.hanselman.com/blog/a-better-prompt-for-cmdexe-or-cool-prompt-environment-variables-and-a-nice-transparent-multiprompt" target="_blank" rel="noopener noreferrer">http://www.hanselman.com/blog/a-better-prompt-for-cmdexe-or-cool-prompt-environment-variables-and-a-nice-transparent-multiprompt</a>)
-
-&nbsp;
