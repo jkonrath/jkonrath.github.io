@@ -1,10 +1,10 @@
 ---
-id: 164
+id: 166
 title: Dogfooding
 date: 2021-06-13T11:58:42-07:00
 author: jkonrath
 layout: post
-guid: http://jonkonrath.com/?p=164
+guid: http://jonkonrath.com/?p=166
 permalink: /2021/06/13/dogfooding/
 categories:
   - blog
