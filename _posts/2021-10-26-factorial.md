@@ -16,7 +16,7 @@ When I was a tech writer, almost every time a developer interviewed me, they wou
 
 I thought of this recently after reading [this](https://codingkaiser.blog/2021/10/20/most-bizzare-sorting-algorithms-you-will-ever-see/), and thinking of the smart-aleck answers I never did give during interviews, like writing it in PostScript or COBOL.
 
-(BTW, a _factorial_ is the product of all positive integers between 1 and _n_. It's denoted as _n!_ So 4! = 1 * 2 * 3 * 4 = 24.)
+(BTW, a factorial is the product of all positive integers between 1 and _n_. It's denoted as _n!_ So 4! = 1 * 2 * 3 * 4 = 24.)
 
 ## Iteratively
 
