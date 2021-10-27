@@ -116,6 +116,12 @@ def factorial(x):
   print (math.factorial(x))
 ```
 
+### Commodore BASIC 2.0
+
+Let's take it back to the beginning:
+
+<img src="/assets/img/c64-factorial.png" />
+
 ### SQL
 
 I was trying to figure this out, but my SQL days are long behind me. You could use a recursive common table expression to create a table of _n_ rows with each row containing the result of the previous row multiplied by the row number... or something.
