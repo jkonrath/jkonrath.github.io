@@ -4,7 +4,7 @@ title: Interview question - calculating a factorial
 date: 2021-10-26
 author: jkonrath
 layout: post
-guid: http://jonkonrath.com/?p=168
+guid: http://jonkonrath.com/?p=169
 permalink: /2021/10/26/factorial/
 categories:
   - blog
