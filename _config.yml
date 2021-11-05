@@ -11,6 +11,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: jonkonrath
 github_username:  jkonrath
 linkedin_username: jkonrath
+google_analytics: UA-1596826-8
 
 # Build settings
 theme: minima
