@@ -120,7 +120,7 @@ def factorial(x):
 
 Let's take it back to the beginning:
 
-<img src="/assets/img/c64-factorial.png" />
+<img alt="C64 BASIC factorial program" src="/assets/img/c64-factorial.png" />
 
 ### SQL
 
