@@ -9,7 +9,8 @@ permalink: /2021/10/26/factorial/
 categories:
   - blog
 tags:
-  - Interviews
+  - interviews
+  - code
 ---
 
 When I was a tech writer, almost every time a developer interviewed me, they would inevitably ask me to whiteboard how to calculate the factorial of a number. When I moved to Northern California in 2008 and started interviewing at various Bay Area tech firms, I was seriously asked to do this exact problem at least twelve times in interviews with three companies.
