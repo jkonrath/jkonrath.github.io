@@ -16,6 +16,8 @@ tags:
   - GitHub
 ---
 
+> (Update: [nope](https://github.blog/2022-06-08-sunsetting-atom/). I've since switched to VSC, so looks like you should too. I'll leave this here for nostalgia purposes.)
+
 Part of this switch to Jekyll I mentioned [previously](/2021/06/13/dogfooding/) is that I now edit this site in Markdown instead of WordPress. The great thing about Markdown is you can theoretically edit it in anything; you could even use Notepad or TextEdit or even the DOS Edlin editor to make a Markdown file. But you probably want something that adds some conveniences, like a few key bindings to save some time typing, a preview pane, and the ability to search and replace multiple files.
 
 When I first started using Markdown at work in 2015, I looked for a good editor that would do all of this, but never entirely found it. I stumbled through trying to set up Notepad++ like an IDE (I was stuck on a Windows machine), and I almost considered setting up Eclipse as a Markdown editor, but then I remembered it wasn't 2003.
