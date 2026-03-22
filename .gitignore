@@ -1,7 +1,10 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
+node_modules
+.cache
+public
+coverage
+.npm
+.eslintcache
 .DS_Store
+_site
+.jekyll-cache
 _drafts
