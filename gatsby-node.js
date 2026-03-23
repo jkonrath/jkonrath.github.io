@@ -1,6 +1,8 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
+const postsPerPage = 5
+const blogIndexTemplate = path.resolve(`./src/templates/blog-index.js`)
 const blogPostTemplate = path.resolve(`./src/templates/blog-post.js`)
 const pageTemplate = path.resolve(`./src/templates/page.js`)
 
@@ -28,6 +30,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const nodes = result.data.allMarkdownRemark.nodes
   const posts = nodes.filter(node => node.fields.collection === `blog`)
   const pages = nodes.filter(node => node.fields.collection === `pages`)
+  const numPages = Math.ceil(posts.length / postsPerPage)
+
+  Array.from({ length: numPages }).forEach((_, index) => {
+    const currentPage = index + 1
+
+    createPage({
+      path: index === 0 ? `/` : `/page/${currentPage}/`,
+      component: blogIndexTemplate,
+      context: {
+        limit: postsPerPage,
+        skip: index * postsPerPage,
+        numPages,
+        currentPage,
+      },
+    })
+  })
 
   posts.forEach((post, index) => {
     const previousPostId = index === 0 ? null : posts[index - 1].id
