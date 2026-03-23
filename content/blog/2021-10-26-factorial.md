@@ -82,7 +82,8 @@ Extra credit: do it with tail recursion.
 
 This blog is in Jekyll, so maybe you've worked with Liquid templates before:
 
-```
+<pre>
+```liquid
 {% assign n = 20 %}
 {% assign result = 1 %}
 {% for i in (1..n) %}
@@ -90,7 +91,7 @@ This blog is in Jekyll, so maybe you've worked with Liquid templates before:
 {% endfor %}
 {{ result }}
 ```
-
+</pre>
 
 > (Tip: if you have to put a Liquid template in a code block in Jekyll, look at the source of this page in GitHub. I'd explain, but delimiting the text in another example isn't working.)
 
