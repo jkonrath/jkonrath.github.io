@@ -1,7 +1,7 @@
 {
   "name": "jonkonrath-com",
   "private": true,
-  "description": "Jonathan Konrath's site rebuilt with Gatsby and Markdown",
+  "description": "Jonathan Konrath's site",
   "version": "0.1.0",
   "author": "Jonathan Konrath",
   "bugs": {

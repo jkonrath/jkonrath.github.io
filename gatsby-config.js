@@ -8,7 +8,7 @@ module.exports = {
       name: `Jonathan Konrath`,
       summary: `technical writer, docs manager, and publications engineer.`,
     },
-    description: `Technical writing, documentation systems, API docs, and assorted blog posts from Jonathan Konrath.`,
+    description: `Technical writing, management, documentation systems, API docs, and assorted blog posts from Jonathan Konrath.`,
     siteUrl: `https://www.jonkonrath.com`,
     social: {
       github: `jkonrath`,
