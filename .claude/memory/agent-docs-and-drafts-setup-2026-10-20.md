@@ -45,3 +45,18 @@ unpublished posts, and the `.claude/memory/` record system.
 8. **Commit and push.**
    - Committed the `CLAUDE.md` memory section and this record to `main` as "Add memory
      record system for agent sessions", pushed to `origin/main`.
+
+(Steps on the `nav-changes` branch, including PR #4, are in
+`nav-changes-2026-10-20.md`.)
+
+9. **Asked whether the top-level file should be CLAUDE.md or AGENTS.md.** Recommended
+   AGENTS.md (read by Codex, Cursor, Copilot, etc.) with CLAUDE.md importing it.
+
+10. **Switch to AGENTS.md.**
+    - `git mv CLAUDE.md AGENTS.md`; retitled it and changed "this CLAUDE.md" to
+      "this AGENTS.md". Added a note at the top that it applies to all agents and that
+      edits go here, not in `CLAUDE.md`.
+    - New `CLAUDE.md` contains only `@AGENTS.md`.
+    - `.claude/docs/README.md`: "root CLAUDE.md" → "root AGENTS.md".
+    - Left older memory records alone; their CLAUDE.md mentions are historical.
+    - Committed to `main` as "Move agent instructions to AGENTS.md" and pushed.
