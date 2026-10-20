@@ -20,6 +20,27 @@ If you modify anything in this repo, you must document it:
 
 Don't leave the docs out of date. If something here is wrong, fix it.
 
+## Memory records
+
+In addition to the docs above, every agent session that does work in this repo keeps a
+memory record in `.claude/memory/`. Read recent records there before you start, along
+with `.claude/docs/`.
+
+- **File name**: `<branch>-<YYYY-MM-DD>.md`, e.g. `draft-filtering-2026-10-20.md`. Replace
+  any `/` in the branch name with `-`.
+- **Working on `main`** (no branch): use a three-to-five word kebab-case summary of the
+  work in place of the branch name, e.g. `font-and-layout-changes-2026-01-20.md`.
+- If that file name already exists from an earlier session, add a suffix: `-2`, `-3`, ...
+- **Contents**: a summary of what you did in the session, including:
+  - The prompts or requests you were given (paraphrase long ones).
+  - A running log of the changes you made: files created, edited, moved, or deleted, and
+    any commits or pushes.
+  - Decisions made along the way and anything left unfinished.
+- **Keep it current during your session.** Update your record as you go, not just at the end.
+- **Never edit old records.** Records from earlier sessions are a historical record. If
+  one is wrong or outdated, say so in your own record or fix the relevant doc instead.
+- Don't put secrets, tokens, or credentials in a record.
+
 ## Stack
 
 - **Gatsby 5** static site generator, React 18. Node 22 in CI.
