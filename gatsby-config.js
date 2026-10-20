@@ -15,9 +15,9 @@ module.exports = {
       linkedin: `jkonrath`,
     },
     navigation: [
+      { title: `Home`, slug: `/`, icon: `house` },
       { title: `About`, slug: `/about-me/` },
       { title: `Contact`, slug: `/contact/` },
-      { title: `Skills`, slug: `/skills/` },
       { title: `Resume`, slug: `/resume/` },
     ],
   },
