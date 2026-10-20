@@ -119,6 +119,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     type NavigationItem {
       title: String
       slug: String
+      icon: String
     }
 
     type Social {

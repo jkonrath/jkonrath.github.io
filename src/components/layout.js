@@ -1,5 +1,12 @@
 import * as React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faHouse } from "@fortawesome/free-solid-svg-icons"
+
+// Maps the `icon` names used in siteMetadata.navigation to FontAwesome icons
+const navIcons = {
+  house: faHouse,
+}
 
 const Layout = ({ location, children }) => {
   const data = useStaticQuery(graphql`
@@ -11,6 +18,7 @@ const Layout = ({ location, children }) => {
           navigation {
             title
             slug
+            icon
           }
           social {
             github
@@ -53,6 +61,13 @@ const Layout = ({ location, children }) => {
                 }
                 to={item.slug}
               >
+                {navIcons[item.icon] && (
+                  <FontAwesomeIcon
+                    className="site-nav-icon"
+                    icon={navIcons[item.icon]}
+                    aria-hidden="true"
+                  />
+                )}
                 {item.title}
               </Link>
             ))}
