@@ -41,3 +41,15 @@ page, and make the buttons a consistent width.
 3. **Commit and push.**
    - Committed everything above to `nav-changes` as "Rework header nav: add Home, drop
      Skills" and pushed the branch to `origin/nav-changes` (no deploy; only `main` deploys).
+
+4. **Add a CLAUDE.md rule: don't log opening a PR in the memory record (it should be
+   complete before the PR opens), but do log and push later work added to an open PR.**
+   - Added two bullets to the "Memory records" section of `CLAUDE.md`.
+   - Committed with this record update as "Document memory record rules for PRs" and
+     pushed to `nav-changes` (`1ec938a`), but the PR had already been merged with only
+     `b3e9bc6`, so that commit never reached `main`. Lesson: check the PR state before
+     pushing more work to a branch.
+
+5. **Commit those changes directly to `main`.**
+   - Applied `1ec938a` to `main` (on top of the PR merge `9549049`), with this record
+     update, and pushed to `origin/main`. `nav-changes` is now stale and can be deleted.
