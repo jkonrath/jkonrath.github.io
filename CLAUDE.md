@@ -37,6 +37,11 @@ with `.claude/docs/`.
     any commits or pushes.
   - Decisions made along the way and anything left unfinished.
 - **Keep it current during your session.** Update your record as you go, not just at the end.
+- **Finish the record before opening a PR, and don't log opening the PR.** The record
+  should already be complete and committed when the PR is opened. Otherwise you get a loop
+  of finishing the record, opening the PR, updating the record, pushing to the PR again.
+- **Later work on an open PR does get logged.** If you push more commits to an open PR,
+  add that work to the record and commit and push the record update with it.
 - **Never edit old records.** Records from earlier sessions are a historical record. If
   one is wrong or outdated, say so in your own record or fix the relevant doc instead.
 - Don't put secrets, tokens, or credentials in a record.
